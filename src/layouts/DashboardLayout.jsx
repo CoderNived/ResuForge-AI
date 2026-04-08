@@ -1,13 +1,15 @@
-import Sidebar from "../components/Sidebar";
-
 function DashboardLayout({ children }) {
   return (
     <div style={{ display: "flex" }}>
-      <Sidebar />
+      
+      <div style={{ width: "200px" }}>
+        <h3>Sidebar</h3>
+      </div>
 
       <div style={{ flex: 1 }}>
         {children}
       </div>
+
     </div>
   );
 }
